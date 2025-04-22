@@ -55,13 +55,14 @@ const BrandLogos = () => {
   return (
     <div className="bg-center bg-cover relative text-white">
       <div className="relative z-10">
-        <div data-aos="fade-up" className="wrapper">
+        <div data-aos-offset="-1000" data-aos="fade-up" className="wrapper">
           <h2 className="heading-2 max-w-[60rem] mx-auto text-center capitalize">
             grow your business like our other 50 +clients
           </h2>
         </div>
         <div
           data-aos="fade-up"
+          data-aos-offset="-1000"
           ref={sliderRef}
           className="keen-slider mt-9 py-[2rem] bg-white/70"
         >

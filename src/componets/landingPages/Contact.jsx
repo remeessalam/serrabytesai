@@ -72,7 +72,11 @@ const Contact = () => {
     >
       <div className="wrapper">
         <div className="h-full grid md:grid-cols-2 gap-10 py-10">
-          <div data-aos="fade-right" className="flex flex-col gap-4">
+          <div
+            data-aos="fade-right"
+            data-aos-offset="-1000"
+            className="flex flex-col gap-4"
+          >
             <h2 className="heading-2">Get In Touch With Us!</h2>
             <p className="desc">
               Connect with us to discuss how computer vision can transform your
@@ -81,6 +85,7 @@ const Contact = () => {
           </div>
           <form
             data-aos="fade-left"
+            data-aos-offset="-1000"
             onSubmit={handleSubmit(handleFormSubmit)}
             className="flex flex-col gap-4 md:px-[1rem]"
           >
