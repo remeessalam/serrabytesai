@@ -31,6 +31,8 @@ const Contact = () => {
     var emailBody = "Name: " + values.name + "\n\n";
     emailBody += "Email: " + values.email + "\n\n";
     emailBody += "Phone Number: " + values.phone + "\n\n";
+    emailBody += "Budget Range: " + values.budget + "\n\n";
+    emailBody += "Selected Package: " + values.package + "\n\n";
     emailBody += "Message:\n" + values.message;
 
     // Construct the request payload
@@ -167,6 +169,51 @@ const Contact = () => {
               />
               <small className="text-red-400">{errors.message?.message}</small>
             </div>
+            {/* Budget Range Field */}
+            <div className="">
+              <input
+                className="w-full bg-transparent outline-none border rounded-sm font-light border-white/40 px-2 py-3"
+                type="text"
+                placeholder="Budget Range (e.g. $500 - $1000)"
+                {...register("budget", {
+                  required: "Budget range is required",
+                  validate: (val) => {
+                    if (val.trim() !== "") {
+                      return true;
+                    } else {
+                      return "Budget range is required";
+                    }
+                  },
+                })}
+              />
+              <small className="text-red-400">{errors.budget?.message}</small>
+            </div>
+            <div className="">
+              <select
+                className="w-full bg-transparent outline-none border rounded-sm font-light border-white/40 px-2 py-3"
+                {...register("package", {
+                  required: "Please select a package",
+                })}
+                defaultValue=""
+              >
+                <option value="" disabled>
+                  Select a Package
+                </option>
+                <option value="basic">
+                  Basic Package - $399 (8 pages, SEO, feature1, feature2)
+                </option>
+                <option value="intermediate">
+                  Intermediate Package - $999 (1 project, analytics, insights
+                  panel, share features)
+                </option>
+                <option value="advance">
+                  Advance Package - $1499 (1 project, analytics, insights panel,
+                  share features)
+                </option>
+              </select>
+              <small className="text-red-400">{errors.package?.message}</small>
+            </div>
+
             <button
               disabled={isSubmitting}
               className="primary-btn"

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { allServices, serviceDetails } from "../../constant";
+import { serviceDetails } from "../../constant";
 import { PiCaretDoubleRightBold } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import Drawer from "react-modern-drawer";
@@ -7,7 +7,7 @@ import { IoMdClose } from "react-icons/io";
 
 const OurServices = ({ length }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const services = serviceDetails.slice(0, length || allServices.length);
+  const services = serviceDetails.slice(0, length || serviceDetails.length);
   const [selectedService, setSelectedService] = useState(services[0]);
 
   const handleSelectServiceToShowDetail = (service) => {
@@ -24,10 +24,18 @@ const OurServices = ({ length }) => {
           Our Services
         </div>
         <h2 data-aos="fade-up" className="heading-2 max-w-[50rem]">
-          Empowering Growth Through Reliable Performance
+          We don’t just build digital solutions — we solve real business
+          problems.{" "}
         </h2>
         <p data-aos="fade-up" className="desc max-w-[50rem]">
-          Together, We Drive Positive Change for a Better Future
+          At the core of what we do is a simple idea: make things that work.
+          Whether you need a high-performing website, smarter systems, or
+          technology that frees up your time — our job is to help you reach your
+          goals faster, with less stress and more clarity.
+          <br />
+          <br />
+          Each of our services is designed with that mindset. Here’s how we
+          help.{" "}
         </p>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 mt-3">
           {services.map((service) => (

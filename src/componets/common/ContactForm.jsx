@@ -34,12 +34,14 @@ const ContactForm = () => {
     var emailBody = "Name: " + values.name + "\n\n";
     emailBody += "Email: " + values.email + "\n\n";
     emailBody += "Phone Number: " + values.phone + "\n\n";
+    emailBody += "Budget Range: " + values.budget + "\n\n";
+    emailBody += "Selected Package: " + values.package + "\n\n";
     emailBody += "Message:\n" + values.message;
 
     // Construct the request payload
     var payload = {
       to: companyDetails.email,
-      subject: "Contact Form Submission - AI Company",
+      subject: "Contact Form Submission - SerraBytesAI Solutions",
       body: emailBody,
     };
 
@@ -199,6 +201,53 @@ const ContactForm = () => {
                   {errors.message?.message}
                 </small>
               </div>
+              {/* Budget Range Field */}
+              <div className="flex flex-col gap-1 w-full">
+                <input
+                  className="border-primary p-2 rounded-md border outline-none bg-transparent"
+                  type="text"
+                  placeholder="Budget Range (e.g. $500 - $1000)"
+                  {...register("budget", {
+                    required: "Budget range is required",
+                    validate: (val) => {
+                      if (val.trim() !== "") {
+                        return true;
+                      } else {
+                        return "Budget range is required";
+                      }
+                    },
+                  })}
+                />
+                <small className="text-red-400">{errors.budget?.message}</small>
+              </div>
+              <div className="flex flex-col gap-1 w-full">
+                <select
+                  className="border-primary p-2 rounded-md border outline-none bg-transparent w-full max-w-full"
+                  {...register("package", {
+                    required: "Please select a package",
+                  })}
+                  defaultValue=""
+                >
+                  <option value="" disabled>
+                    Select a Package
+                  </option>
+                  <option value="basic">
+                    Basic Package - $399 (8 pages, SEO, feature1, feature2)
+                  </option>
+                  <option value="intermediate">
+                    Intermediate Package - $999 (1 project, analytics, insights
+                    panel, share features)
+                  </option>
+                  <option value="advance">
+                    Advance Package - $1499 (1 project, analytics, insights
+                    panel, share features)
+                  </option>
+                </select>
+                <small className="text-red-400">
+                  {errors.package?.message}
+                </small>
+              </div>
+
               <button
                 disabled={isSubmitting}
                 type="submit"

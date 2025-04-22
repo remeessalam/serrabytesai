@@ -64,9 +64,13 @@ export {
 
 // company details
 export const companyDetails = {
-  phone: "+0000000000",
-  whatsapp: "+0000000000",
-  address: "ABC Street, City, Country",
+  phone: "+91-80886 86984",
+  whatsapp: "8088686984",
+  address: `SerraBytesAI Solutions
+Unit 101, Oxford Towers
+139, HAL Old Airport Road
+Kodihalli
+Bangalore 560008`,
   email: "abc@xyz.com",
 };
 
@@ -192,57 +196,57 @@ export const appDevelopmentServices = [
 ];
 
 // all services
-export const allServices = [
-  {
-    id: 1,
-    title: "Web Development",
-    desc: "Crafting modern, responsive, and scalable websites that deliver outstanding user experiences. From front-end to back-end, our web solutions are tailored to meet your business needs.",
-    detailContent:
-      "At AI Company, we specialize in delivering high-performance websites and digital platforms that help businesses thrive online. From custom web development to responsive design, we build solutions that are both user-friendly and visually stunning. Let's turn your vision into a reality.",
-  },
-  {
-    id: 2,
-    title: "Mobile App Development",
-    desc: "Creating high-performance mobile applications for iOS and Android that engage users and drive business growth. Our apps are designed with a focus on usability, speed, and seamless functionality.",
-    detailContent:
-      "At AI Company, we specialize in creating intuitive, high-performing mobile applications tailored to meet the unique needs of businesses across industries. Our expert team combines technical expertise with creative design to develop apps that drive engagement and growth.",
-  },
-  {
-    id: 3,
-    title: "Chatbots",
-    desc: "Developing intelligent chatbots to automate customer interactions, streamline processes, and enhance user engagement. Our chatbots are powered by advanced natural language processing for accurate and human-like conversations.",
-    detailContent:
-      "At AI Company, we specialize in developing AI-powered chatbots that streamline customer support, enhance user engagement, and improve business efficiency. Whether you're looking for a customer service assistant or an interactive sales bot, we build tailored solutions that understand and respond to your users in real time.",
-  },
-  {
-    id: 4,
-    title: "Machine Learning Solutions",
-    desc: "Leveraging data-driven insights to build predictive models, automate processes, and unlock new opportunities. Our machine learning solutions are designed to optimize performance and drive innovation.",
-    detailContent:
-      "AI Company was founded with the vision of helping businesses harness the full potential of artificial intelligence and machine learning. With expertise in data science, AI engineering, and algorithm development, our team provides tailored solutions that address real business problems. We are committed to pushing the boundaries of what’s possible with data-driven insights and intelligent automation.",
-  },
-  {
-    id: 5,
-    title: "Game Development",
-    desc: "At AI Company, we specialize in game development, creating immersive and enjoyable gaming experiences.",
-    detailContent:
-      "At AI Company, we don’t just build games—we create worlds. Our team of passionate developers, artists, and storytellers brings your ideas to life with captivating gameplay, stunning visuals, and unforgettable narratives. Whether it’s an action-packed adventure or a mind-bending puzzle, our games are designed to transport players into new realms and keep them engaged.",
-  },
-  {
-    id: 6,
-    title: "Computer Vision",
-    desc: "Utilizing advanced computer vision techniques to analyze visual data, enabling smart automation, enhanced security, and actionable insights. From object detection to facial recognition, our solutions are precise and reliable.",
-    detailContent:
-      "At AI Company, we specialize in cutting-edge computer vision technology that enables machines to interpret and act on visual data. Our AI-driven solutions power automation, enhance security, and provide deep insights across industries. From object detection to video analysis, we help businesses transform raw visual data into actionable insights.",
-  },
-  {
-    id: 7,
-    title: "Virtual Reality (VR) and Augmented Reality (AR) Development",
-    desc: "Immerse your audience with cutting-edge VR and AR experiences that redefine engagement and elevate brand perception.",
-    detailContent:
-      "At AI Company, we specialize in creating interactive augmented reality experiences that engage users, enhance brand interaction, and drive innovation. From retail and marketing to education and gaming, our AR solutions provide immersive experiences that blend the digital with the real world, offering limitless possibilities for engagement and creativity.",
-  },
-];
+// export const allServices = [
+//   {
+//     id: 1,
+//     title: "Web Development",
+//     desc: "Crafting modern, responsive, and scalable websites that deliver outstanding user experiences. From front-end to back-end, our web solutions are tailored to meet your business needs.",
+//     detailContent:
+//       "At SerraBytesAI Solutions, we specialize in delivering high-performance websites and digital platforms that help businesses thrive online. From custom web development to responsive design, we build solutions that are both user-friendly and visually stunning. Let's turn your vision into a reality.",
+//   },
+//   {
+//     id: 2,
+//     title: "Mobile App Development",
+//     desc: "Creating high-performance mobile applications for iOS and Android that engage users and drive business growth. Our apps are designed with a focus on usability, speed, and seamless functionality.",
+//     detailContent:
+//       "At SerraBytesAI Solutions, we specialize in creating intuitive, high-performing mobile applications tailored to meet the unique needs of businesses across industries. Our expert team combines technical expertise with creative design to develop apps that drive engagement and growth.",
+//   },
+//   {
+//     id: 3,
+//     title: "Chatbots",
+//     desc: "Developing intelligent chatbots to automate customer interactions, streamline processes, and enhance user engagement. Our chatbots are powered by advanced natural language processing for accurate and human-like conversations.",
+//     detailContent:
+//       "At SerraBytesAI Solutions, we specialize in developing AI-powered chatbots that streamline customer support, enhance user engagement, and improve business efficiency. Whether you're looking for a customer service assistant or an interactive sales bot, we build tailored solutions that understand and respond to your users in real time.",
+//   },
+//   {
+//     id: 4,
+//     title: "Machine Learning Solutions",
+//     desc: "Leveraging data-driven insights to build predictive models, automate processes, and unlock new opportunities. Our machine learning solutions are designed to optimize performance and drive innovation.",
+//     detailContent:
+//       "SerraBytesAI Solutions was founded with the vision of helping businesses harness the full potential of artificial intelligence and machine learning. With expertise in data science, AI engineering, and algorithm development, our team provides tailored solutions that address real business problems. We are committed to pushing the boundaries of what’s possible with data-driven insights and intelligent automation.",
+//   },
+//   {
+//     id: 5,
+//     title: "Game Development",
+//     desc: "At SerraBytesAI Solutions, we specialize in game development, creating immersive and enjoyable gaming experiences.",
+//     detailContent:
+//       "At SerraBytesAI Solutions, we don’t just build games—we create worlds. Our team of passionate developers, artists, and storytellers brings your ideas to life with captivating gameplay, stunning visuals, and unforgettable narratives. Whether it’s an action-packed adventure or a mind-bending puzzle, our games are designed to transport players into new realms and keep them engaged.",
+//   },
+//   {
+//     id: 6,
+//     title: "Computer Vision",
+//     desc: "Utilizing advanced computer vision techniques to analyze visual data, enabling smart automation, enhanced security, and actionable insights. From object detection to facial recognition, our solutions are precise and reliable.",
+//     detailContent:
+//       "At SerraBytesAI Solutions, we specialize in cutting-edge computer vision technology that enables machines to interpret and act on visual data. Our AI-driven solutions power automation, enhance security, and provide deep insights across industries. From object detection to video analysis, we help businesses transform raw visual data into actionable insights.",
+//   },
+//   {
+//     id: 7,
+//     title: "Virtual Reality (VR) and Augmented Reality (AR) Development",
+//     desc: "Immerse your audience with cutting-edge VR and AR experiences that redefine engagement and elevate brand perception.",
+//     detailContent:
+//       "At SerraBytesAI Solutions, we specialize in creating interactive augmented reality experiences that engage users, enhance brand interaction, and drive innovation. From retail and marketing to education and gaming, our AR solutions provide immersive experiences that blend the digital with the real world, offering limitless possibilities for engagement and creativity.",
+//   },
+// ];
 
 export const serviceDetails = [
   {
@@ -342,7 +346,7 @@ export const whyChooseUsContent = [
   },
   {
     title: "Security and Reliability",
-    desc: "At AI Company, we take security seriously. Our solutions are built with stringent security protocols to safeguard your business data and protect it from cyber threats.",
+    desc: "At SerraBytesAI Solutions, we take security seriously. Our solutions are built with stringent security protocols to safeguard your business data and protect it from cyber threats.",
   },
   {
     title: "Long-Term Partnerships",

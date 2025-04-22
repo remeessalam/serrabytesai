@@ -53,16 +53,18 @@ const BrandLogos = () => {
     },
   });
   return (
-    <div
-      className="bg-center bg-cover relative text-white"
-    >
+    <div className="bg-center bg-cover relative text-white">
       <div className="relative z-10">
         <div data-aos="fade-up" className="wrapper">
           <h2 className="heading-2 max-w-[60rem] mx-auto text-center capitalize">
-            Join our 50+ happy clients
+            grow your business like our other 50 +clients
           </h2>
         </div>
-        <div data-aos="fade-up" ref={sliderRef} className="keen-slider mt-9 py-[2rem] bg-primary">
+        <div
+          data-aos="fade-up"
+          ref={sliderRef}
+          className="keen-slider mt-9 py-[2rem] bg-white/70"
+        >
           {[img1, img2, img3, img4, img5, img6, img7, img8, img9, img10].map(
             (img, index) => (
               <div

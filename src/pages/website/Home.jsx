@@ -9,6 +9,9 @@ import OurServices from "../../componets/website/OurServices";
 import EndlessOpportunitiesSection from "../../componets/common/EndlessOpportunitiesSection";
 import UnlockEfficiency from "../../componets/common/UnlockEfficiency";
 import bannerImage from "../../assets/videos/bannerimage.jpg";
+import Testimonials from "../../componets/common/Testimonials";
+import BrandLogos from "../../componets/common/BrandLogos";
+import BusinessScaling from "../../componets/common/BusinessScaling";
 const Home = () => {
   return (
     <>
@@ -37,17 +40,17 @@ const Home = () => {
               IT Services
             </div>
             <h1 className="heading-1">
-              Delivering <br /> Next-Generation <br /> Technology Solutions
+              Stand out.
+              <br /> Sell more.
+              <br /> Scale faster.
             </h1>
-            <p className="desc">
-              Expert IT services tailored to your business needs.
-            </p>
+            <p className="desc">Don’t just exist online dominate it.</p>
             <div className="flex flex-row gap-5">
               <Link to="/contact-us" className="primary-btn mt-2">
-                Get Started
+                start dominating Now
               </Link>
               <Link to="/services" className="secondary-btn mt-2">
-                learn how we can help you grow
+                Learn how we can help you grow
               </Link>
             </div>
           </div>
@@ -65,21 +68,18 @@ const Home = () => {
           <div data-aos="fade-right" className="flex h-full flex-col gap-7">
             <div className="flex flex-col gap-7 text-center lg:text-start">
               <h2 className="heading-2">
-                Driving Operational Excellence Through Cutting-Edge Technology.
+                We're a team that builds with purpose, not just pixels.{" "}
               </h2>
               <p className="desc">
-                At AI Company, we are committed to delivering high-quality
-                digital solutions tailored to meet the demands of today’s
-                fast-evolving business landscape. Driven by a passion for
-                innovation, creativity, and excellence, we approach each project
-                with a commitment to achieving impactful results. As your
-                trusted technology partner, we turn bold ideas into reality
-                through advanced technology and creative digital strategies. Our
-                core strengths include Web Development, App Development, Chatbot
-                Development, Machine Learning Solutions, Virtual Reality (VR)
-                and Augmented Reality (AR) Development, Computer Vision and Game
-                Development—enabling businesses to not only adapt but thrive and
-                grow in a competitive digital world.
+                This isn’t just our job — it’s what we’re passionate about. From
+                day one, our focus has been simple: help businesses grow by
+                using design, technology, and strategy the smart way. No
+                gimmicks. No overpromises. Just solid work that delivers.
+                <br />
+                <br />
+                We’re not the biggest agency in the game — and that’s exactly
+                the point. We stay lean, stay focused, and bring senior-level
+                thinking to every project we take on.
               </p>
             </div>
             <div className="flex gap-5 mt-4 justify-center lg:justify-start">
@@ -100,6 +100,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <BusinessScaling />
       <OurServices length={3} />
       <section className="py-[5rem] bg-black text-white">
         <div
@@ -113,12 +114,12 @@ const Home = () => {
             Your Partner in Reliable and Responsive IT Services
           </h1>
           <p className="desc max-w-[50rem] mx-auto">
-            Founded with a passion for technology and creativity, Parvesha
-            Innovations has grown into a trusted partner for businesses seeking
-            digital transformation. Our team of experienced developers,
-            designers, and strategists are dedicated to building high-quality,
-            innovative IT solutions tailored to meet the unique needs of each
-            client.
+            Founded with a passion for technology and creativity, SerraBytesAI
+            Solutions Innovations has grown into a trusted partner for
+            businesses seeking digital transformation. Our team of experienced
+            developers, designers, and strategists are dedicated to building
+            high-quality, innovative IT solutions tailored to meet the unique
+            needs of each client.
           </p>
         </div>
       </section>
@@ -127,6 +128,8 @@ const Home = () => {
       <WhyChooseUs />
       <UnlockEfficiency />
       <EndlessOpportunitiesSection />
+      <Testimonials />
+      <BrandLogos />
       <Contact />
     </>
   );
