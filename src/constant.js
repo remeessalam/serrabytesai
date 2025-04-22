@@ -30,6 +30,21 @@ import { ReactComponent as AndroidIcon } from "./assets/svgs/androiddevelopment.
 import { ReactComponent as FlutterIcon } from "./assets/svgs/flutterdevelopment.svg";
 import { ReactComponent as HybridAppIcon } from "./assets/svgs/hybridappdevelopment.svg";
 
+// porfolio image
+// Import all images at the top (Web Development)
+import FiveGHomesImg from "./assets/web-development-portfolio/5ghomes.png";
+import ColdCreekcapImg from "./assets/web-development-portfolio/cold creekcap.png";
+import ThinkRealityImg from "./assets/web-development-portfolio/think reality.png";
+import AkashMegaMart from "./assets/web-development-portfolio/Akash Mega Mart.png";
+import MidwamImmersive from "./assets/web-development-portfolio/Midwam – Immersive Experience Design Company.png";
+
+// Import all images at the top (App Development)
+import RentopBikeAndCarImgapp from "./assets/app-development-portfolio/Rentop – Bike & Car Rentals.jpg";
+import AkashMegaMartApp from "./assets/app-development-portfolio/Akash Mega Mart Mobile App.jpg";
+import FeelItMobileApp from "./assets/app-development-portfolio/FeelIt Mobile App.jpg";
+import KlikomicsMobileApp from "./assets/app-development-portfolio/Klikomics Mobile App.jpg";
+import AutoSnapMobileApp from "./assets/app-development-portfolio/AutoSnap Mobile App.jpg";
+
 import { lazy } from "react";
 const Home = lazy(() => import("./pages/website/Home"));
 const Services = lazy(() => import("./pages/website/Services"));
@@ -358,60 +373,71 @@ export const whyChooseUsContent = [
   },
 ];
 
-// portfolio images (web development)
+//portfolio
+
+//web port folio
 export const webPortfolio = [
   {
     id: 1,
-    img: require("./assets/images/web_projects/1.webp"),
-    title: "FE-Finance",
-  },
-  {
-    id: 2,
-    img: require("./assets/images/web_projects/2.webp"),
-    title: "Ocxee",
+    img: FiveGHomesImg,
+    title: "5g Homes",
+    link: "https://5ghighspeedinternet.co",
   },
   {
     id: 3,
-    img: require("./assets/images/web_projects/3.webp"),
-    title: "Leaderbridge",
+    img: ColdCreekcapImg,
+    title: "Cold Creekcap",
+    link: "https://www.coldcreekcap.com",
   },
   {
-    id: 4,
-    img: require("./assets/images/web_projects/4.webp"),
-    title: "Gigzio",
+    id: 9,
+    img: ThinkRealityImg,
+    title: "Think Reality",
+    link: "https://thinkrealty.ae",
   },
   {
-    id: 5,
-    img: require("./assets/images/web_projects/5.webp"),
-    title: "FE Group",
+    id: 90,
+    img: AkashMegaMart,
+    title: "Akash Mega Mart",
+    link: "https://akashmegamart.com/",
   },
   {
-    id: 6,
-    img: require("./assets/images/web_projects/6.webp"),
-    title: "V Talkz",
+    id: 91,
+    img: MidwamImmersive,
+    title: "Midwam – Immersive Experience Design Company",
+    link: "https://www.midwam.com/en/about",
   },
 ];
-
-// portfolio images (app development)
+//app port folio
 export const appPortfolio = [
   {
     id: 1,
-    img: require("./assets/images/app_projects/1.webp"),
-    title: "PartEx",
+    img: AkashMegaMartApp,
+    title: "Akash Mega Mart Mobile App",
+    link: "https://play.google.com/store/apps/details?id=com.app.akash_mega_mart",
   },
   {
     id: 2,
-    img: require("./assets/images/app_projects/2.webp"),
-    title: "Find A Driver",
+    img: FeelItMobileApp,
+    title: "FeelIt Mobile App",
+    link: "https://play.google.com/store/apps/details?id=com.app.akash_mega_mart",
   },
   {
     id: 3,
-    img: require("./assets/images/app_projects/3.webp"),
-    title: "Artisan Express",
+    img: KlikomicsMobileApp,
+    title: "Klikomics Mobile App",
+    link: "https://play.google.com/store/apps/details?id=com.klikomics.android&pcampaignid=web_share",
   },
   {
     id: 4,
-    img: require("./assets/images/app_projects/4.webp"),
-    title: "House of Deliverance",
+    img: AutoSnapMobileApp,
+    title: "AutoSnap Mobile App",
+    link: "https://play.google.com/store/apps/details?id=com.Zigna.AutoSnap&pcampaignid=web_share",
+  },
+  {
+    id: 8,
+    img: RentopBikeAndCarImgapp,
+    title: "Rentop Bike and Car",
+    link: "https://play.google.com/store/apps/details?id=com.rentop&pcampaignid=web_share",
   },
 ];
