@@ -14,6 +14,7 @@ import BrandLogos from "../../componets/common/BrandLogos";
 import BusinessScaling from "../../componets/common/BusinessScaling";
 import ContactForm from "../../componets/common/ContactForm";
 import Portfolio from "../../componets/common/Portfolio";
+import PricingSection from "../../componets/common/PricingSection";
 const Home = () => {
   return (
     <div className="overflow-x-hidden   bg-no-repeat max-w-screen">
@@ -135,6 +136,7 @@ const Home = () => {
 
       <Testimonials />
       <BrandLogos />
+      <PricingSection />
       {/* <Contact /> */}
       <ContactForm />
     </div>

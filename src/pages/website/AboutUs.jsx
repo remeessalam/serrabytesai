@@ -13,6 +13,7 @@ import {
 import OurServices from "../../componets/website/OurServices";
 import Testimonials from "../../componets/common/Testimonials";
 import { Link } from "react-router-dom";
+import PricingSection from "../../componets/common/PricingSection";
 
 const AboutUs = () => {
   return (
@@ -424,6 +425,9 @@ const AboutUs = () => {
         </div>
       </div>
       {/* <UnlockEfficiency /> */}
+      <div className="pb-[5rem]">
+        <PricingSection />
+      </div>
     </div>
   );
 };
