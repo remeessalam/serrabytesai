@@ -93,22 +93,32 @@ Bangalore 560008`,
 export const routes = [
   {
     name: "Home",
-    path: "/",
+    link: "/",
     component: <Home />,
   },
   {
     name: "Services",
-    path: "/services",
+    link: "/services",
     component: <Services />,
+    children: [
+      {
+        link: "/web-development",
+        name: "Web Development",
+      },
+      {
+        link: "/app-development",
+        name: "App Development",
+      },
+    ],
   },
   {
     name: "About Us",
-    path: "/about-us",
+    link: "/about-us",
     component: <AboutUs />,
   },
   {
     name: "Contact Us",
-    path: "/contact-us",
+    link: "/contact-us",
     component: <ContactUs />,
   },
 ];

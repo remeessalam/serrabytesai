@@ -71,6 +71,7 @@ const ContactForm = () => {
     <div className="wrapper py-[5rem] grid lg:grid-cols-[45%_auto] gap-7">
       <div
         data-aos="fade-right"
+        data-aos-offset="-800"
         className="bg-gradient-to-r flex flex-col gap-2 text-white from-secondary/30 to-primary/30 p-4 rounded-xl"
       >
         <div className="gradient-rounded-text-box">Book an Appointment</div>
@@ -117,6 +118,7 @@ const ContactForm = () => {
       </div>
       <div
         data-aos="fade-left"
+        data-aos-offset="-800"
         className="h-full flex flex-col justify-between gap-7"
       >
         <div className="p-[1px] text-white h-full bg-gradient-to-r from-secondary to-primary rounded-lg">

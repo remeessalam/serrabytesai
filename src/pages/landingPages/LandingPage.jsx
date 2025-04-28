@@ -17,7 +17,7 @@ import { Link as ScrollLink } from "react-scroll";
 import WhyChooseUs from "../../componets/common/WhyChooseUs";
 import EndlessOpportunitiesSection from "../../componets/common/EndlessOpportunitiesSection";
 import LandingServices from "../../componets/landingPages/LandingServices";
-import UnlockEfficiency from "../../componets/common/UnlockEfficiency";
+// import UnlockEfficiency from "../../componets/common/UnlockEfficiency";
 import Portfolio from "../../componets/common/Portfolio";
 import ContactForm from "../../componets/common/ContactForm";
 import BrandLogos from "../../componets/common/BrandLogos";
@@ -226,10 +226,11 @@ export const LandingPage = ({ page }) => {
 
       {/* <Faqs /> */}
 
-      <UnlockEfficiency />
-      <EndlessOpportunitiesSection />
+      {/* <UnlockEfficiency /> */}
+      {/* <EndlessOpportunitiesSection /> */}
       <BrandLogos />
-      <Contact />
+      {/* <Contact /> */}
+      <ContactForm />
     </>
   );
 };

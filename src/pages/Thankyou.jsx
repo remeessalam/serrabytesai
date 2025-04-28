@@ -38,10 +38,10 @@ const Thankyou = () => {
             <div className="flex md:flex-row flex-col gap-10">
               <div className="flex flex-col gap-2">
                 <h6 className="font-medium mb-1">Quick Links</h6>
-                {routes.map(({ name, path }) => (
+                {routes.map(({ name, link }) => (
                   <Link
-                    key={path}
-                    to={path}
+                    key={link}
+                    to={link}
                     className="text-white/70 desc text-sm hover:text-primary transition-all duration-300"
                   >
                     {name}

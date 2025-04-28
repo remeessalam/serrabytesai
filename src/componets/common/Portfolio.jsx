@@ -3,7 +3,11 @@ import { appPortfolio, webPortfolio } from "../../constant";
 
 const Portfolio = ({ page }) => {
   const isWebDevelopment = Boolean(page === "web-development");
-  let portfolio = isWebDevelopment ? webPortfolio : appPortfolio;
+  let portfolio = isWebDevelopment
+    ? webPortfolio
+    : page === "app-development"
+    ? appPortfolio
+    : [...webPortfolio, ...appPortfolio];
   return (
     <div id="portfolio" className="bg-[#101010] text-white py-[5rem]">
       <div className="wrapper">

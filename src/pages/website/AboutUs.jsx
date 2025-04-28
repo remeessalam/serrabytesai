@@ -9,14 +9,14 @@ import {
   aboutUsPageImg,
   whyChooseUsContent,
 } from "../../constant";
-import UnlockEfficiency from "../../componets/common/UnlockEfficiency";
+// import UnlockEfficiency from "../../componets/common/UnlockEfficiency";
 import OurServices from "../../componets/website/OurServices";
 import Testimonials from "../../componets/common/Testimonials";
 import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
-    <>
+    <div>
       <div
         data-aos="fade-down"
         className="h-[40vh] sm:h-[55vh] md:h-[70vh] relative"
@@ -423,8 +423,8 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <UnlockEfficiency />
-    </>
+      {/* <UnlockEfficiency /> */}
+    </div>
   );
 };
 

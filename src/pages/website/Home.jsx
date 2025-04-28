@@ -1,23 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Contact from "../../componets/landingPages/Contact";
+// import Contact from "../../componets/landingPages/Contact";
 import aboutUsImg from "../../assets/images/landing-aboutus.png";
 import WhyChooseUs from "../../componets/common/WhyChooseUs";
-import ReactPlayer from "react-player";
-import { homeBannerVideo } from "../../constant";
+// import ReactPlayer from "react-player";
+// import { homeBannerVideo } from "../../constant";
 import OurServices from "../../componets/website/OurServices";
-import EndlessOpportunitiesSection from "../../componets/common/EndlessOpportunitiesSection";
-import UnlockEfficiency from "../../componets/common/UnlockEfficiency";
+// import EndlessOpportunitiesSection from "../../componets/common/EndlessOpportunitiesSection";
+// import UnlockEfficiency from "../../componets/common/UnlockEfficiency";
 import bannerImage from "../../assets/videos/bannerimage.jpg";
 import Testimonials from "../../componets/common/Testimonials";
 import BrandLogos from "../../componets/common/BrandLogos";
 import BusinessScaling from "../../componets/common/BusinessScaling";
+import ContactForm from "../../componets/common/ContactForm";
+import Portfolio from "../../componets/common/Portfolio";
 const Home = () => {
   return (
-    <>
+    <div className="overflow-x-hidden   bg-no-repeat max-w-screen">
       <div
         id="banner"
-        className="h-screen relative bg-current bg-center  bg-cover   bg-no-repeat "
+        className="h-screen relative bg-current bg-center  bg-cover "
         style={{ backgroundImage: `url(${bannerImage})` }}
       >
         {/* <ReactPlayer
@@ -44,10 +46,10 @@ const Home = () => {
               <br /> Sell more.
               <br /> Scale faster.
             </h1>
-            <p className="desc">Don’t just exist online dominate it.</p>
+            <p className="desc">Don’t just exist online, dominate it.</p>
             <div className="flex flex-row gap-5">
               <Link to="/contact-us" className="primary-btn mt-2">
-                start dominating Now
+                Start dominating Now
               </Link>
               <Link to="/services" className="secondary-btn mt-2">
                 Learn how we can help you grow
@@ -102,7 +104,8 @@ const Home = () => {
       </section>
       <BusinessScaling />
       <OurServices length={3} />
-      <section className="py-[5rem] bg-black text-white">
+
+      {/* <section className="py-[5rem] bg-black text-white">
         <div
           data-aos="fade-up"
           className="wrapper text-center flex flex-col gap-3"
@@ -122,16 +125,19 @@ const Home = () => {
             needs of each client.
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* <Faqs /> */}
       <WhyChooseUs />
-      <UnlockEfficiency />
-      <EndlessOpportunitiesSection />
+      {/* <UnlockEfficiency /> */}
+      {/* <EndlessOpportunitiesSection /> */}
+      <Portfolio />
+
       <Testimonials />
       <BrandLogos />
-      <Contact />
-    </>
+      {/* <Contact /> */}
+      <ContactForm />
+    </div>
   );
 };
 

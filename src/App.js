@@ -27,13 +27,15 @@ export default function App() {
         <ScrollToTop />
         <Routes>
           {/* Website Pages */}
-          {routes.map(({ component, name, path }, index) => (
+          {routes.map(({ component, name, link }, index) => (
             <Route
-              path={path}
+              path={link}
               element={
                 <>
                   <WebsiteHeader name={name} />
+                  {/* <div className="max-w-screen overflow-x-hidden"> */}
                   {component}
+                  {/* </div> */}
                   <WebsiteFooter />
                 </>
               }

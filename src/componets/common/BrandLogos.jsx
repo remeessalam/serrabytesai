@@ -10,6 +10,7 @@ import img7 from "../../assets/images/client-logos/7.png";
 import img8 from "../../assets/images/client-logos/8.png";
 import img9 from "../../assets/images/client-logos/9.png";
 import img10 from "../../assets/images/client-logos/10.png";
+import "keen-slider/keen-slider.min.css";
 
 const animation = { duration: 10000, easing: (t) => t };
 

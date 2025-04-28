@@ -76,7 +76,7 @@ body {
 }
 
 /* hamburger menu icon */
-.hamburger-react div{
+.hamburger-react div {
   background-color: #f2ad18 !important;
 }
 
@@ -106,12 +106,12 @@ body {
   display: inline-block;
   position: relative;
   border: 3px solid;
-  border-color: #FFF #FFF transparent;
+  border-color: #fff #fff transparent;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
 }
 .loader::after {
-  content: '';  
+  content: "";
   box-sizing: border-box;
   position: absolute;
   left: 0;
@@ -135,8 +135,8 @@ body {
   100% {
     transform: rotate(360deg);
   }
-} 
-    
+}
+
 @keyframes rotationBack {
   0% {
     transform: rotate(0deg);
@@ -145,4 +145,3 @@ body {
     transform: rotate(-360deg);
   }
 }
-    
