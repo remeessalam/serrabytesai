@@ -1,5 +1,11 @@
 import React from "react";
-import { BsFacebook, BsLinkedin, BsTwitter, BsYoutube } from "react-icons/bs";
+import {
+  BsFacebook,
+  BsInstagram,
+  BsLinkedin,
+  BsTwitter,
+  BsYoutube,
+} from "react-icons/bs";
 import { companyDetails, logoImg, routes } from "../../constant";
 import { Link } from "react-router-dom";
 
@@ -51,20 +57,17 @@ const WebsiteFooter = () => {
         <div className="pt-4 mt-7 border-t text-gray-500 border-primary w-full">
           <div className="flex justify-center gap-5 w-full">
             <div className="flex gap-5 items-center mt-5">
-              <Link
-                target="_blank"
-                to="https://www.facebook.com/profile.php?id=100087571897636&mibextid=ZbWKwL"
-              >
+              <Link target="_blank" to={companyDetails.facebook}>
                 <BsFacebook className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
               </Link>
-              <Link>
+              <Link target="_blank" to={companyDetails.twitter}>
                 <BsTwitter className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
               </Link>
-              <Link>
+              <Link target="_blank" to={companyDetails.linkedIn}>
                 <BsLinkedin className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
               </Link>
-              <Link>
-                <BsYoutube className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
+              <Link target="_blank" to={companyDetails.instagram}>
+                <BsInstagram className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
               </Link>
             </div>
           </div>

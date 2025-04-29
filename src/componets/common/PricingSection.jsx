@@ -54,7 +54,7 @@ const PricingSection = () => {
         {pricingData.map((plan, index) => (
           <div
             key={index}
-            className="bg-zinc-900 rounded-lg p-6 w-full h-full max-w-xs flex flex-col"
+            className="bg-zinc-900 rounded-lg p-6 w-full h-full max-w-xs flex flex-col hover:scale-105 transition-all duration-300"
           >
             <h3 className="text-gray-300 text-sm mb-2">{plan.title}</h3>
             <h2 className="text-white text-4xl font-bold mb-6">
@@ -92,7 +92,7 @@ const PricingSection = () => {
         {pricingData.map((plan, index) => (
           <div
             key={index}
-            className="flex-shrink-0 snap-center bg-zinc-900 rounded-lg p-6 w-64 mx-2 first:ml-4 last:mr-4 flex flex-col"
+            className="flex-shrink-0 snap-center bg-zinc-900 rounded-lg p-6 w-64 mx-2 first:ml-4 last:mr-4 flex flex-col hover:scale-105 transition-all duration-300"
           >
             <h3 className="text-gray-300 text-sm mb-2">{plan.title}</h3>
             <h2 className="text-white text-4xl font-bold mb-6">

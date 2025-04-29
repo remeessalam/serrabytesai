@@ -333,7 +333,7 @@ const AboutUs = () => {
               <div
                 data-aos="fade-up"
                 data-aos-delay="200"
-                className="p-6 bg-gray-800 bg-opacity-40 rounded-lg"
+                className="p-6 bg-gray-800 bg-opacity-40 rounded-lg hidden sm:flex flex-col"
               >
                 <h3 className="font-bold text-xl mb-3">
                   Work like it's our own
@@ -345,24 +345,22 @@ const AboutUs = () => {
                 data-aos-delay="300"
                 className="p-6 bg-gray-800 bg-opacity-40 rounded-lg md:col-span-1.5"
               >
-                <h3 className="font-bold text-xl mb-3">
-                  Respect time and trust
-                </h3>
-                <p>Yours and ours. We don't waste either.</p>
+                <h3 className="font-bold text-xl mb-3">Your time and trust</h3>
+                <p>Your time and ours. We don't waste either.</p>
               </div>
               <div
                 data-aos="fade-up"
                 data-aos-delay="400"
                 className="p-6 bg-gray-800 bg-opacity-40 rounded-lg md:col-span-1.5"
               >
-                <h3 className="font-bold text-xl mb-3">Always be improving</h3>
+                <h3 className="font-bold text-xl mb-3">Always improving</h3>
                 <p>Our work evolves. So do we.</p>
               </div>
             </div>
           </div>
 
           {/* Who We Work With Section */}
-          <div className="mt-[5rem] w-full">
+          <div className="mt-[5rem] w-full hidden sm:flex flex-col">
             <h2 className="heading-2 text-center mb-5">Who We Work With</h2>
             <p className="desc text-center">
               We've partnered with startups finding their footing, established
@@ -395,7 +393,7 @@ const AboutUs = () => {
           </div>
 
           {/* Let's Build Something That Matters Section */}
-          <div className="mt-[5rem] w-full">
+          <div className="mt-[5rem] w-full hidden sm:flex flex-col">
             <h2 className="heading-2 text-center mb-5">
               Let's Build Something That Matters
             </h2>

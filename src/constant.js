@@ -87,6 +87,10 @@ Unit 101, Oxford Towers
 Kodihalli
 Bangalore 560008`,
   email: "abc@xyz.com",
+  instagram: "https://www.instagram.com/serrabytesai?igsh=b2hhZHZsYjcyeXY0",
+  twitter: "https://x.com/serrabytesai_",
+  linkedIn: "https://www.linkedin.com/company/serrabytesai/",
+  facebook: "https://www.facebook.com/profile.php?id=61575897055039",
 };
 
 // website routes
