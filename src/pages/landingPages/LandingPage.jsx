@@ -231,7 +231,7 @@ export const LandingPage = ({ page }) => {
       {/* <EndlessOpportunitiesSection /> */}
       <BrandLogos />
       {/* <Contact /> */}
-      <PricingSection />
+      {isWebDevelopment && <PricingSection />}
       <ContactForm />
     </>
   );
