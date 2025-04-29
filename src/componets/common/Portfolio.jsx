@@ -30,12 +30,12 @@ const Portfolio = ({ page }) => {
               {portfolio.map((item) => (
                 <div
                   key={item.id}
-                  className="w-[250px] min-w-[250px] mx-4 flex-shrink-0 rounded-md overflow-hidden relative group"
+                  className="w-[350px] min-w-[350px] mx-4 flex-shrink-0 rounded-md overflow-hidden relative group"
                 >
                   <img
                     src={item.img}
                     alt={item.title}
-                    className="w-full h-[200px] object-cover group-hover:scale-110 transition-all duration-300"
+                    className="w-full h-[300px] object-cover group-hover:scale-110 transition-all duration-300"
                   />
                   <div className="absolute bottom-0 left-0 w-full p-2 bg-primary/80 text-black text-center">
                     <h3 className="font-medium">{item.title}</h3>
