@@ -74,7 +74,10 @@ const ContactForm = () => {
       .finally(() => setSpinner(false));
   };
   return (
-    <div className="wrapper py-[5rem] grid lg:grid-cols-[45%_auto] gap-7">
+    <div
+      id="contact"
+      className="wrapper py-[5rem] grid lg:grid-cols-[45%_auto] gap-7"
+    >
       <div
         data-aos="fade-right"
         data-aos-offset="-800"
@@ -240,16 +243,17 @@ const ContactForm = () => {
                     Select a Package
                   </option>
                   <option value="basic">
-                    Basic Package - $399 (8 pages, SEO, feature1, feature2)
+                    Basic Package - £399 (8 pages, SEO, feature1, feature2)
                   </option>
                   <option value="intermediate">
-                    Intermediate Package - $999 (1 project, analytics, insights
+                    Intermediate Package - £999 (1 project, analytics, insights
                     panel, share features)
                   </option>
                   <option value="advance">
-                    Advance Package - $1499 (1 project, analytics, insights
+                    Advance Package - £1499 (1 project, analytics, insights
                     panel, share features)
                   </option>
+                  <option value="advance">Custom Package</option>
                 </select>
                 <small className="text-red-400">
                   {errors.package?.message}

@@ -7,7 +7,9 @@ const Banner = ({ page }) => {
     <div
       data-aos="fade-down"
       className={` ${
-        page === "Services" ? `h-[33vh]` : `md:h-[70vh] h-[40vh] sm:h-[55vh]`
+        page === "Services" || page === "Contact Us"
+          ? `h-[33vh]`
+          : `md:h-[70vh] h-[40vh] sm:h-[55vh]`
       } relative`}
     >
       <img src={defaultBanner} className="object-cover h-full w-full" alt="" />

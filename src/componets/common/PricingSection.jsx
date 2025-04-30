@@ -58,7 +58,7 @@ const PricingSection = () => {
           >
             <h3 className="text-gray-300 text-sm mb-2">{plan.title}</h3>
             <h2 className="text-white text-4xl font-bold mb-6">
-              ${plan.price}
+              £{plan.price}
             </h2>
             <div className="flex-grow">
               {plan.features.map((feature, idx) => (

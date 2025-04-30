@@ -215,6 +215,7 @@ const Contact = () => {
                   Advance Package - $1499 (1 project, analytics, insights panel,
                   share features)
                 </option>
+                <option value="advance">Custom Package</option>
               </select>
               <small className="text-red-400">{errors.package?.message}</small>
             </div>

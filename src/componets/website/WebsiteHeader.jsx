@@ -73,7 +73,8 @@ const WebsiteHeader = () => {
               )
             )}
             <Link
-              to={`tel:${companyDetails.phone}`}
+              // to={`tel:${companyDetails.phone}`}
+              to={"/contact-us"}
               className="text-black font-medium cursor-pointer tracking-wide bg-tertiary hover:bg-tertiary/80 text-sm hover:shadow-secondary hover:-translate-y-1 shadow-2xl shadow-transparent rounded-full px-6 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300"
             >
               Let’s Talk

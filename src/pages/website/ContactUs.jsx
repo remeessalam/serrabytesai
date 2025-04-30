@@ -8,7 +8,7 @@ const ContactUs = () => {
     <>
       <Banner page="Contact Us" />
       <ContactForm />
-      <MapComponent />
+      {/* <MapComponent /> */}
     </>
   );
 };

@@ -39,9 +39,9 @@ const LandingHeader = () => {
     <div className="py-4 fixed top-0 w-full bg-black/60 backdrop-blur-md z-50 text-white">
       <div className="wrapper flex justify-between items-center gap-10">
         <div className="flex justify-between items-center gap-20 w-full pl-[1rem] lg:pl-0">
-          <Link smooth={true} to="banner" className="cursor-pointer relative">
+          <a href="/" to="banner" className="cursor-pointer relative">
             <img src={logoImg} className="w-[10rem]" alt="logo" />
-          </Link>
+          </a>
           <div className="lg:flex items-center gap-10 hidden">
             {options.map((option) => (
               <Link
@@ -58,7 +58,11 @@ const LandingHeader = () => {
               </Link>
             ))}
             <Link
-              to={`tel:${companyDetails.phone}`}
+              to="contact"
+              offset={-60}
+              duration={1000}
+              smooth={true}
+              // to={`tel:${companyDetails.phone}`}
               className="text-black font-medium cursor-pointer tracking-wide bg-tertiary hover:bg-tertiary/80 text-sm hover:shadow-secondary hover:-translate-y-1 shadow-2xl shadow-transparent rounded-full px-6 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300"
             >
               Let’s Talk

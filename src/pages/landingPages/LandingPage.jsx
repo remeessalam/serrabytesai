@@ -64,7 +64,7 @@ export const LandingPage = ({ page }) => {
         </div>
       </div>
 
-      <ContactForm />
+      {/* <ContactForm /> */}
 
       <section id="about" className="pb-[5rem] bg-black text-white wrapper">
         <div
