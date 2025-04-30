@@ -243,10 +243,8 @@ const ContactForm = () => {
                     Select a Package
                   </option>
                   <option value="basic">Basic Package - £399</option>
-                  <option value="intermediate">
-                    Intermediate Package - £899
-                  </option>
-                  <option value="advance">Advance Package - £1699</option>
+                  <option value="intermediate">Premium Package - £899</option>
+                  <option value="advance">Advanced Package - £1699</option>
                   <option value="advance">Custom Package</option>
                 </select>
                 <small className="text-red-400">
