@@ -79,6 +79,7 @@ export {
 
 // company details
 export const companyDetails = {
+  name: "SerraBytesAI Solutions",
   phone: "+91-80886 86984",
   whatsapp: "8088686984",
   address: `SerraBytesAI Solutions
