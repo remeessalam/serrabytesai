@@ -233,7 +233,7 @@ const ContactForm = () => {
               </div>
               <div className="flex flex-col gap-1 w-full">
                 <select
-                  className="border-primary p-2 rounded-md border outline-none bg-transparent w-full max-w-full"
+                  className="border-primary bg-black p-2 rounded-md border outline-none bg-transparent w-full max-w-full"
                   {...register("package", {
                     required: "Please select a package",
                   })}
@@ -242,10 +242,18 @@ const ContactForm = () => {
                   <option value="" disabled>
                     Select a Package
                   </option>
-                  <option value="basic">Basic Package - £399</option>
-                  <option value="intermediate">Premium Package - £899</option>
-                  <option value="advance">Advanced Package - £1699</option>
-                  <option value="advance">Custom Package</option>
+                  <option value="basic" className="!text-black">
+                    Basic Package - £399
+                  </option>
+                  <option value="premium" className="text-black">
+                    Premium Package - £899
+                  </option>
+                  <option value="advance" className="text-black">
+                    Advanced Package - £1699
+                  </option>
+                  <option value="custom" className="text-black">
+                    Custom Package
+                  </option>
                 </select>
                 <small className="text-red-400">
                   {errors.package?.message}
