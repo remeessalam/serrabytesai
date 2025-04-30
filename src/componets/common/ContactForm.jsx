@@ -242,17 +242,11 @@ const ContactForm = () => {
                   <option value="" disabled>
                     Select a Package
                   </option>
-                  <option value="basic">
-                    Basic Package - £399 (8 pages, SEO, feature1, feature2)
-                  </option>
+                  <option value="basic">Basic Package - £399</option>
                   <option value="intermediate">
-                    Intermediate Package - £899 (1 project, analytics, insights
-                    panel, share features)
+                    Intermediate Package - £899
                   </option>
-                  <option value="advance">
-                    Advance Package - £1699 (1 project, analytics, insights
-                    panel, share features)
-                  </option>
+                  <option value="advance">Advance Package - £1699</option>
                   <option value="advance">Custom Package</option>
                 </select>
                 <small className="text-red-400">
