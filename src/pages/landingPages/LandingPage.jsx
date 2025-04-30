@@ -6,7 +6,7 @@ import section5Img4 from "../../assets/images/section-5-img-4.png";
 import section5Img5 from "../../assets/images/section-5-img-5.png";
 import section5Img6 from "../../assets/images/section-5-img-6.png";
 import section5Img7 from "../../assets/images/section-5-img-7.png";
-import Contact from "../../componets/landingPages/Contact";
+import bannerImage from "../../assets/videos/bannerimage.jpg";
 import {
   appDevBanner,
   appLandingAbout,
@@ -29,11 +29,12 @@ export const LandingPage = ({ page }) => {
     <>
       <div id="banner" className="h-screen relative">
         <img
-          src={isWebDevelopment ? webDevBanner : appDevBanner}
+          // src={isWebDevelopment ? webDevBanner : appDevBanner}
+          src={bannerImage}
           className="w-full h-full object-cover object-right absolute"
           alt=""
         />
-        <div className="bg-gradient-to-r from-black/70 to-primary/60 absolute w-full h-full"></div>
+        <div className="bg-gradient-to-r to-black/50 from-transparent absolute w-full h-full"></div>
         <div
           data-aos="fade-up"
           className="pt-[3rem] wrapper flex items-center h-full"
