@@ -246,11 +246,11 @@ const ContactForm = () => {
                     Basic Package - £399 (8 pages, SEO, feature1, feature2)
                   </option>
                   <option value="intermediate">
-                    Intermediate Package - £999 (1 project, analytics, insights
+                    Intermediate Package - £899 (1 project, analytics, insights
                     panel, share features)
                   </option>
                   <option value="advance">
-                    Advance Package - £1499 (1 project, analytics, insights
+                    Advance Package - £1699 (1 project, analytics, insights
                     panel, share features)
                   </option>
                   <option value="advance">Custom Package</option>
