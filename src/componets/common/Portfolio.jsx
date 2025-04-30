@@ -44,24 +44,48 @@ const Portfolio = ({ page }) => {
               ))}
             </Marquee>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              {portfolio.map((item) => (
-                <div
-                  data-aos="fade-up"
-                  key={item.id}
-                  className="flex flex-col gap-3 rounded-md overflow-hidden relative group w-full"
-                >
-                  <img
-                    src={item.img}
-                    alt={item.title}
-                    className="w-fit h-fit object-contain group-hover:scale-110 transition-all duration-300"
-                  />
-                  <div className="absolute bottom-0 left-0 w-full p-2 bg-primary/80 text-black flex flex-col gap-2">
-                    <h3 className="font-medium text-center">{item.title}</h3>
-                  </div>
+            <>
+              <div className="block md:hidden w-full overflow-x-auto pb-4 scrollbar-hide">
+                <div className="flex flex-nowrap gap-4 min-w-max px-4">
+                  {portfolio.map((item) => (
+                    <div
+                      data-aos="fade-right"
+                      key={item.id}
+                      className="flex-shrink-0 w-72 flex flex-col gap-3 rounded-md overflow-hidden relative group"
+                    >
+                      <img
+                        src={item.img}
+                        alt={item.title}
+                        className="w-full h-auto object-contain group-hover:scale-110 transition-all duration-300"
+                      />
+                      <div className="absolute bottom-0 left-0 w-full p-2 bg-primary/80 text-black flex flex-col gap-2">
+                        <h3 className="font-medium text-center">
+                          {item.title}
+                        </h3>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+              </div>
+              <div className="hidden sm:grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                {portfolio.map((item) => (
+                  <div
+                    data-aos="fade-up"
+                    key={item.id}
+                    className="flex flex-col gap-3 rounded-md overflow-hidden relative group w-full"
+                  >
+                    <img
+                      src={item.img}
+                      alt={item.title}
+                      className="w-fit h-fit object-contain group-hover:scale-110 transition-all duration-300"
+                    />
+                    <div className="absolute bottom-0 left-0 w-full p-2 bg-primary/80 text-black flex flex-col gap-2">
+                      <h3 className="font-medium text-center">{item.title}</h3>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
           )}
         </div>
       </div>
