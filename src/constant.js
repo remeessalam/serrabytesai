@@ -87,7 +87,7 @@ Unit 101, Oxford Towers
 139, HAL Old Airport Road
 Kodihalli
 Bangalore 560008`,
-  email: "sales@serrabytesai.com",
+  email: "support@serrabytesai.com",
   instagram: "https://www.instagram.com/serrabytesai?igsh=b2hhZHZsYjcyeXY0",
   twitter: "https://x.com/serrabytesai_",
   linkedIn: "https://www.linkedin.com/company/serrabytesai/",
